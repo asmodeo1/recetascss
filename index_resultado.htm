@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- 
+        Tipo de letra: https://www.dafont.com/es/matisan-script.font
+        Imágenes y recetas: https://www.elmueble.com/recetas/
+    -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recetas</title>
+    <style>
+      body {
+        background-color: blanchedalmond;
+      }
+      main,
+      header,
+      nav {
+        margin: auto;
+        width: 80%;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      @font-face {
+        font-family: Matisan;
+        src: url(fuentes/MatisanScript.otf);
+      }
+      /* Cabecera */
+      header {
+        background-image: url("imagenes/abuela.png");
+        background-repeat: no-repeat;
+        padding-left: 70px;
+        box-sizing: border-box;
+        background-position: left center;
+        border-top: 3px dashed brown;
+        border-bottom: 3px dashed brown;
+      }
+      header h1 {
+        font-family: Matisan;
+        font-size: 4em;
+        margin: 0;
+        color: darksalmon;
+        text-shadow: 2px 2px 2px black;
+      }
+
+      /* Navegación */
+      nav ul {
+        padding: 0;
+      }
+      nav ul li {
+        display: inline-block;
+        background-color: brown;
+        padding: 0.6em 2em;
+        margin-right: 1.5em;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      nav li a {
+        color: white;
+        text-decoration: none;
+      }
+      nav li:hover a {
+        color: rgb(240, 178, 21);
+      }
+
+      /* Secciones */
+      section h1 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        text-align: center;
+        font-size: 2em;
+        background-color: darksalmon;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        border: 3px ridge rgb(221, 79, 32);
+      }
+      section h1::before {
+        content: "- ";
+      }
+      section h1::after {
+        content: " -";
+      }
+
+      .seccion {
+        padding: 5px;
+        background-color: rgb(231, 189, 139);
+      }
+
+      /* Recetas */
+      .receta {
+        width: 46%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: bisque;
+        border: 3px solid rgb(237, 179, 108);
+        border-radius: 5px;
+        float: left;
+        margin: 1em;
+      }
+      .receta h2 {
+        font-family: "Courier New", Courier, monospace;
+        background-color: white;
+        background: rgb(250, 252, 250);
+        background: linear-gradient(180deg, rgb(237, 179, 108) 0%, bisque 100%);
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        color: rgb(46, 115, 12);
+      }
+      .imagenReceta {
+        display: block;
+        margin: auto;
+        margin-top: 1em;
+        border: 1px solid black;
+      }
+      .receta p:first-of-type {
+        font-style: italic;
+        margin: 1em;
+      }
+      .receta span {
+        font-weight: bold;
+      }
+      .receta ul {
+        list-style-type: square;
+        font-size: 0.9em;
+      }
+      .receta footer {
+        text-align: right;
+        font-size: small;
+        margin: 1em;
+        border-top: 1px solid lightcoral;
+        padding-top: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Las recetas de la Abuela</h1></header>
+    <nav>
+      <ul>
+        <li><a href="#entrantes">Entrantes</a></li>
+        <li><a href="#primeros">Primeros</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="clearfix" id="entrantes">
+        <h1>Entrantes</h1>
+        <article class="receta">
+          <h2>CROQUETAS DE QUESO Y CALABACÍN</h2>
+          <img
+            src="imagenes/croquetas.jpg"
+            class="imagenReceta"
+            alt="croquetas de queso y calabacín"
+          />
+          <p>
+            ¿Te apasionan las croquetas? Entonces anímate a probar estas de
+            queso y calabacín: se hacen en menos de 20 minutos y están
+            riquísimas. Además, son muy fáciles de preparar, incluso para los
+            principantes del mundo de la cocina.
+          </p>
+          <p class="seccion"><span>Tiempo:</span> 20 minutos</p>
+          <p class="seccion"><span>Ingredientes</span> (para 4 personas)</p>
+          <ul>
+            <li>1 calabacín</li>
+            <li>150 gramos de queso gruyere</li>
+            <li>1 ajo</li>
+            <li>40 gramos de harina</li>
+            <li>40 gramos de mantequilla</li>
+            <li>200 ml de leche</li>
+            <li>100 gramos de pan rallado</li>
+            <li>1 huevo</li>
+            <li>Albahaca</li>
+            <li>Pimienta</li>
+            <li>Aceite y sal</li>
+          </ul>
+          <footer>&copy; Luis Sorino - Las recetas de la abuela</footer>
+        </article>
+        <article class="receta">
+          <h2>COLIFLOR GRATINADA CON BESAMEL</h2>
+          <img
+            src="imagenes/coliflor.jpg"
+            class="imagenReceta"
+            alt="Coliflor gratinada con besamel"
+          />
+          <p>
+            Aléjate de la aburrida coliflor con aceite y anímate a preparar esta
+            versión gratinada y con besamel que está exquisita. Es una comida
+            saludable y apetitosa a partes iguales que eleva la clásica receta
+            con coliflor.
+          </p>
+          <p class="seccion"><span>Tiempo:</span> 20 minutos</p>
+          <p class="seccion"><span>Ingredientes</span> (para 4 personas)</p>
+          <ul>
+            <li>1 coliflor</li>
+            <li>650 ml de leche</li>
+            <li>50 gramos de harina</li>
+            <li>75 gramos de mantequilla</li>
+            <li>85 gramos de queso Emmental rallado</li>
+            <li>Una pizca de nuez moscada</li>
+            <li>Pimienta y sal</li>
+          </ul>
+          <footer>&copy; Eva García - Las recetas de la abuela</footer>
+        </article>
+      </section>
+      <section id="primeros">
+        <h1>Primeros</h1>
+        <article class="receta">
+          <h2>LUBINA A LA PLANCHA CON MIEL Y MOSTAZA</h2>
+          <img
+            src="imagenes/lubina.jpg"
+            class="imagenReceta"
+            alt="Lubina a la plancha con miel y mostaza"
+          />
+          <p>
+            La exquisita lubina puede prepararse de muchas maneras; sin embargo,
+            te recomendamos esta receta con miel y mostaza, una combinación
+            exitosa que elaborarás en menos de 20 minutos. ¡Pruébala!
+          </p>
+          <p class="seccion"><span>Tiempo:</span> 15 minutos</p>
+          <p class="seccion"><span>Ingredientes</span> (para 4 personas)</p>
+          <ul>
+            <li>600 gramos de filetes de lubina</li>
+            <li>1 cucharada de mostaza de Dijon</li>
+            <li>2 cucharadas de miel</li>
+            <li>1 limón</li>
+            <li>1 cucharada de perejil picado</li>
+            <li>200 gramos de canónigos o berros</li>
+            <li>1 remolacha cocida</li>
+            <li>Aceite de oliva y sal</li>
+          </ul>
+          <footer>&copy; Eva García - Las recetas de la abuela</footer>
+        </article>
+        <article class="receta">
+          <h2>ARROZ CON POLLO AL CURRY</h2>
+          <img
+            src="imagenes/arrozpollo.jpg"
+            class="imagenReceta"
+            alt="Arroz con pollo al curry"
+          />
+          <p>
+            ¿Quieres una receta de arroz sencilla, rápida y sabrosa? Esta receta
+            de pechuga de pollo con arroz aliñados al curry y acompañado de
+            champiñones es perfecto para preparar un plato en tan solo 20
+            minutos.
+          </p>
+          <p class="seccion"><span>Tiempo:</span> 20 minutos</p>
+          <p class="seccion"><span>Ingredientes</span> (para 4 personas)</p>
+          <ul>
+            <li>800 g de arroz blanco</li>
+            <li>2 pechugas de pollo</li>
+            <li>150 gramos de champiñones</li>
+            <li>Curry en polvo</li>
+            <li>Aceite, sal y pimienta</li>
+          </ul>
+          <footer>&copy; Rubén Álvarez - Las recetas de la abuela</footer>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
