@@ -1,0 +1,17 @@
+En este ejercicio seguiremos estudiando el uso de CSS. 
+
+Los conceptos que veremos:
+
+- uso de colores
+- uso de fondos de color, degradados e imágenes
+- uso de bordes
+- uso de márgenes y espaciados
+- uso de diferentes tipos de letras
+- creación de un sencillo menú usando listas
+- creación de dos columnas usando la propiedad float y el uso de la clase clearfix para solucionar los problemas que crea. Posteriormente veremos mejores maneras de crear columnas con Flexbox y Grid
+- centrado de dichas columnas de una de las maneras que se podía hacer antes de Flexbox y Grid
+- carga de fuentes de letra personalizadas
+- alineación, decoraciones y sombras de textos 
+
+Tipo de letra: https://www.dafont.com/es/matisan-script.font
+Imágenes y recetas: https://www.elmueble.com/recetas/
